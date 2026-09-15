@@ -4,8 +4,6 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bottega.lol", "bottega.lol\bottega.lol.vcxproj", "{8F3A6C21-47D9-4E0B-9A2C-5D1E8F7A0B33}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bottega.lol.internal", "bottega.lol.internal\bottega.lol.internal.vcxproj", "{CE36439D-E332-45B4-AABB-2AF5A650A42F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -22,11 +20,5 @@ Global
 		{8F3A6C21-47D9-4E0B-9A2C-5D1E8F7A0B33}.Release|Win32.Build.0 = Release|Win32
 		{8F3A6C21-47D9-4E0B-9A2C-5D1E8F7A0B33}.Release|x64.ActiveCfg = Release|x64
 		{8F3A6C21-47D9-4E0B-9A2C-5D1E8F7A0B33}.Release|x64.Build.0 = Release|x64
-		{CE36439D-E332-45B4-AABB-2AF5A650A42F}.Debug|Win32.ActiveCfg = Debug|Win32
-		{CE36439D-E332-45B4-AABB-2AF5A650A42F}.Debug|x64.ActiveCfg = Debug|x64
-		{CE36439D-E332-45B4-AABB-2AF5A650A42F}.Debug|x64.Build.0 = Debug|x64
-		{CE36439D-E332-45B4-AABB-2AF5A650A42F}.Release|Win32.ActiveCfg = Release|Win32
-		{CE36439D-E332-45B4-AABB-2AF5A650A42F}.Release|x64.ActiveCfg = Release|x64
-		{CE36439D-E332-45B4-AABB-2AF5A650A42F}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 EndGlobal

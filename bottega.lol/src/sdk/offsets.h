@@ -656,13 +656,13 @@ namespace Offsets {
     }
 
     namespace Misc {
-        // Non-dumped extras consumed by menu/native code.
+        // Non-dumped extras consumed by menu code.
         inline constexpr uintptr_t AnimationId = 0xC0;
         inline constexpr uintptr_t StringLength = 0x10;
     }
 
     namespace RenderQueue {
-        // Non-dumped extras consumed by menu/native code.
+        // Non-dumped extras consumed by menu code.
         inline constexpr uintptr_t AlwaysOnTop = 0xD;
         inline constexpr uintptr_t AlwaysOnTopAdorns = 0xE;
         inline constexpr uintptr_t Decals = 0x2;
@@ -683,7 +683,7 @@ namespace Offsets {
     }
 
     namespace MeshContentProvider {
-        // Non-dumped extras consumed by menu/native code.
+        // Non-dumped extras consumed by menu code.
         inline constexpr uintptr_t AssetID = 0x10;
         inline constexpr uintptr_t Cache = 0xD8;
         inline constexpr uintptr_t LRUCache = 0x20;
@@ -693,7 +693,7 @@ namespace Offsets {
     }
 
     namespace MeshData {
-        // Non-dumped extras consumed by menu/native code.
+        // Non-dumped extras consumed by menu code.
         inline constexpr uintptr_t FaceEnd = 0x38;
         inline constexpr uintptr_t FaceStart = 0x30;
         inline constexpr uintptr_t VertexEnd = 0x8;

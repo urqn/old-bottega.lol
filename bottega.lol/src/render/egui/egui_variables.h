@@ -173,10 +173,6 @@ public:
         int engine_chams_style = 0; // 0 default, 1 ghost, 2 wireframe, 3 colored frame, 4 colored, 5 smoke no shadow, 6 smoke, 7 invisible
         float engine_chams_color[4] = { 1.0f, 0.3f, 0.6f, 1.0f };
         int engine_ghost_color_idx = 0;
-
-        bool native_chams_enabled = true;
-        bool native_include_local = false;
-        float native_chams_color[4] = { 1.0f, 0.3f, 0.6f, 1.0f };
     } esp;
 
     struct

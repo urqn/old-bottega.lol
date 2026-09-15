@@ -70,9 +70,6 @@ inline bool engineChams = false;
 inline int engineChamsStyle = 0;
 inline float engineChamsColor[4] = {1.0f, 0.3f, 0.6f, 1.0f};
 inline int engineGhostColorIdx = 0;
-inline bool nativeChams = false;
-inline bool nativeIncludeLocal = false;
-inline float nativeChamsColor[4] = {1.0f, 0.3f, 0.6f, 1.0f};
 }
 
 namespace Local {

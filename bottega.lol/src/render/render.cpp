@@ -38,7 +38,6 @@
 #include "../core/features/mesh/MeshCache.h"
 #include "../core/features/mesh/MeshDxShader.h"
 #include "../core/features/mesh/ShaderChams.h"
-#include "../core/features/native/NativeChams.h"
 
 extern IMGUI_IMPL_API LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 
@@ -1719,7 +1718,7 @@ void draw_esp() {
         if (!on_screen)
             continue;
 
-        if (chams_on && p.characterAddr && !NativeChams::Enabled()) {
+        if (chams_on && p.characterAddr) {
             const Mesh::Vector2 vp{ fw, fh };
             if (variables::ESP::meshChamsStyle == 2) {
                 ShaderChams::DrawPlayer(dl, p.characterAddr, mesh_view, vp, 1.0f, 1.0f,
@@ -2208,10 +2207,6 @@ void sync_chams_vars() {
     memcpy(variables::ESP::engineChamsColor, e.engine_chams_color, sizeof(e.engine_chams_color));
     variables::ESP::engineGhostColorIdx = e.engine_ghost_color_idx;
     variables::ESP::localPlayer = e.local_player;
-    variables::ESP::nativeChams = e.native_chams_enabled;
-    variables::ESP::nativeIncludeLocal = e.native_include_local;
-    memcpy(variables::ESP::nativeChamsColor, e.native_chams_color, sizeof(e.native_chams_color));
-    NativeChams::Update();
     if (e.chams_enabled)
         MeshCache::Get().Refresh(true);
 }
@@ -2283,7 +2278,6 @@ bool Render::run() {
 
         refresh_players();
         sync_chams_vars();
-        NativeChams::AutoInject();
         run_movement_features();
         run_world_features();
         draw_esp();

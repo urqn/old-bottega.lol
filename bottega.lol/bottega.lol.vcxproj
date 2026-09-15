@@ -35,8 +35,6 @@
     <ClCompile Include="src\core\features\mesh\MeshDxShader.cpp" />
     <ClCompile Include="src\core\features\mesh\MeshParser.cpp" />
     <ClCompile Include="src\core\features\mesh\EngineChams.cpp" />
-    <ClCompile Include="src\core\injector\ManualMapper.cpp" />
-    <ClCompile Include="src\core\features\native\NativeChams.cpp" />
     <ClCompile Include="src\core\features\mesh\ShaderChams.cpp" />
     <ClCompile Include="src\core\features\aim\RaycastSilent.cpp" />
     <ClCompile Include="src\core\features\aim\ViewportSilent.cpp" />
@@ -68,8 +66,6 @@
     <ClInclude Include="src\core\cache\cache.h" />
     <ClInclude Include="src\core\cache\workspace.h" />
     <ClInclude Include="src\core\features\mesh\EngineChams.h" />
-    <ClInclude Include="src\core\injector\ManualMapper.h" />
-    <ClInclude Include="src\core\features\native\NativeChams.h" />
     <ClInclude Include="src\core\features\aim\aimmath.h" />
     <ClInclude Include="src\core\features\aim\paidmem.h" />
     <ClInclude Include="src\core\features\aim\RaycastSilent.h" />

@@ -20,7 +20,6 @@
 #include "core/net/ping.h"
 #include "../core/features/mesh/MeshDxShader.h"
 #include "../core/features/mesh/ShaderChams.h"
-#include "../core/features/native/NativeChams.h"
 #pragma comment(lib, "windowscodecs.lib")
 #pragma comment(lib, "ole32.lib")
 
@@ -843,23 +842,6 @@ namespace egui {
                 if (vars.esp.engine_chams_style == 3 || vars.esp.engine_chams_style == 4) {
                     combo("Color", &vars.esp.engine_ghost_color_idx,
                           "Red\0Green\0Orange\0Blue\0Magenta\0Cyan\0White\0\0");
-                }
-
-                section_label("Native");
-                checkbox("Native Chams (Internal)", &vars.esp.native_chams_enabled);
-                same_line_right(layout.swatch); color_button("##native_col", vars.esp.native_chams_color);
-                checkbox("Include Local", &vars.esp.native_include_local);
-                ImFont* f_nat = fnt(efonts.inter.Text10);
-                if (!NativeChams::Injected()) {
-                    if (button("Inject")) NativeChams::InjectAsync();
-                    const ImVec4 nc = colors.text_muted;
-                    draw_text(f_nat, ImGui::GetCursorScreenPos(), nc, NativeChams::Status());
-                    ImGui::Dummy(ImVec2(measure(f_nat, NativeChams::Status()).x, fsize(f_nat)));
-                } else {
-                    const ImVec4 nc = ImVec4(0.35f, 0.85f, 0.45f, 1.0f);
-                    const char* s = "renderer active";
-                    draw_text(f_nat, ImGui::GetCursorScreenPos(), nc, s);
-                    ImGui::Dummy(ImVec2(measure(f_nat, s).x, fsize(f_nat)));
                 }
                 break;
             }
