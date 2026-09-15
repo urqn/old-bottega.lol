@@ -106,16 +106,19 @@ The current tree targets **Roblox `version-4310300497aa4917`**. Offsets drift wi
 
 ### Updating offsets after a Roblox patch
 
-1. Dump the new client with your **phantomX-Roblox-Dumper** tool and save its output to `output\dumper\offsets.h`.
-2. From the repo root run:
+You don't need the dumper — fresh offsets are posted in the Discord after every client build.
+
+1. Download the raw `offsets.h` for your Roblox version from the **Discord** (https://discord.gg/shvMwDHFF9).
+2. Save it as `output\dumper\offsets.h` in the repo folder (create the folders if needed).
+3. From the repo root run:
 
    ```powershell
    powershell -ExecutionPolicy Bypass -File output\merge_offsets.ps1
    ```
 
-3. `merge_offsets.ps1` parses the dump, rewrites it as `namespace Offsets`, re-applies the non-dumped extras (with stable fallbacks), regenerates the header, and prints the version + field count. Rebuild, done.
+4. `merge_offsets.ps1` parses the raw offsets, rewrites them as `namespace Offsets`, re-applies the non-dumped extras (with stable fallbacks), regenerates the header, and prints the version + field count. If the header already matches your version it tells you. Rebuild the solution, done.
 
-> Don't re-dump? Most patches ship updated offsets in the Discord — **join the Discord for updated offsets and updates**: https://discord.gg/shvMwDHFF9
+> Prefer not to build at all? **Join the Discord for updated offsets and updates**: https://discord.gg/shvMwDHFF9
 
 ## Disclaimer
 
