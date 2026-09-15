@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ext\imgui\imgui.cpp" />
+    <ClCompile Include="ext\imgui\imgui_draw.cpp" />
+    <ClCompile Include="ext\imgui\imgui_freetype.cpp" />
+    <ClCompile Include="ext\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="ext\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="ext\imgui\imgui_tables.cpp" />
+    <ClCompile Include="ext\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\core\app\app.cpp" />
+    <ClCompile Include="src\core\cache\workspace.cpp" />
+    <ClCompile Include="src\core\net\ping.cpp" />
+    <ClCompile Include="src\core\features\mesh\MeshCache.cpp" />
+    <ClCompile Include="src\core\features\mesh\MeshChams.cpp" />
+    <ClCompile Include="src\core\features\mesh\MeshDxShader.cpp" />
+    <ClCompile Include="src\core\features\mesh\MeshParser.cpp" />
+    <ClCompile Include="src\core\features\mesh\EngineChams.cpp" />
+    <ClCompile Include="src\core\injector\ManualMapper.cpp" />
+    <ClCompile Include="src\core\features\native\NativeChams.cpp" />
+    <ClCompile Include="src\core\features\mesh\ShaderChams.cpp" />
+    <ClCompile Include="src\core\features\aim\RaycastSilent.cpp" />
+    <ClCompile Include="src\core\features\aim\ViewportSilent.cpp" />
+    <ClCompile Include="src\core\features\aim\MouseSilent.cpp" />
+    <ClCompile Include="src\core\features\aim\PhantomSilent.cpp" />
+    <ClCompile Include="src\core\features\aim\SilentAim.cpp" />
+    <ClCompile Include="src\core\tp_handler\tp_handler.cpp" />
+    <ClCompile Include="src\memory\memory.cpp" />
+    <ClCompile Include="src\render\render.cpp" />
+    <ClCompile Include="src\render\egui\egui.cpp" />
+    <ClCompile Include="src\render\egui\egui_draw.cpp" />
+    <ClCompile Include="src\render\egui\egui_glass.cpp" />
+    <ClCompile Include="src\render\egui\egui_menu.cpp" />
+    <ClCompile Include="src\render\egui\egui_spotify.cpp" />
+    <ClCompile Include="src\render\egui\egui_widgets.cpp" />
+    <ClCompile Include="src\render\egui\model3d.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ext\imgui\imconfig.h" />
+    <ClInclude Include="ext\imgui\imgui.h" />
+    <ClInclude Include="ext\imgui\imgui_freetype.h" />
+    <ClInclude Include="ext\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="ext\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="ext\imgui\imgui_internal.h" />
+    <ClInclude Include="ext\imgui\imstb_rectpack.h" />
+    <ClInclude Include="ext\imgui\imstb_textedit.h" />
+    <ClInclude Include="ext\imgui\imstb_truetype.h" />
+    <ClInclude Include="src\core\app\app.h" />
+    <ClInclude Include="src\core\cache\cache.h" />
+    <ClInclude Include="src\core\cache\workspace.h" />
+    <ClInclude Include="src\core\features\mesh\EngineChams.h" />
+    <ClInclude Include="src\core\injector\ManualMapper.h" />
+    <ClInclude Include="src\core\features\native\NativeChams.h" />
+    <ClInclude Include="src\core\features\aim\aimmath.h" />
+    <ClInclude Include="src\core\features\aim\paidmem.h" />
+    <ClInclude Include="src\core\features\aim\RaycastSilent.h" />
+    <ClInclude Include="src\core\features\aim\ViewportSilent.h" />
+    <ClInclude Include="src\core\features\aim\MouseSilent.h" />
+    <ClInclude Include="src\core\features\aim\PhantomSilent.h" />
+    <ClInclude Include="src\core\features\aim\SilentAim.h" />
+    <ClInclude Include="src\core\globals\globals.h" />
+    <ClInclude Include="src\core\net\ping.h" />
+    <ClInclude Include="src\core\tp_handler\tp_handler.h" />
+    <ClInclude Include="src\core\variables\variables.h" />
+    <ClInclude Include="src\memory\memory.h" />
+    <ClInclude Include="src\render\render.h" />
+    <ClInclude Include="src\render\egui\egui.h" />
+    <ClInclude Include="src\render\egui\egui_colors.h" />
+    <ClInclude Include="src\render\egui\egui_fonts.h" />
+    <ClInclude Include="src\render\egui\egui_glass.h" />
+    <ClInclude Include="src\render\egui\egui_helper.h" />
+    <ClInclude Include="src\render\egui\egui_images.h" />
+    <ClInclude Include="src\render\egui\egui_keys.h" />
+    <ClInclude Include="src\render\egui\egui_model.h" />
+    <ClInclude Include="src\render\egui\egui_settings.h" />
+    <ClInclude Include="src\render\egui\egui_spotify.h" />
+    <ClInclude Include="src\render\egui\egui_variables.h" />
+    <ClInclude Include="src\render\egui\model3d.h" />
+    <ClInclude Include="src\sdk\math.h" />
+    <ClInclude Include="src\sdk\MeshBridge.h" />
+    <ClInclude Include="src\sdk\MeshMath.h" />
+    <ClInclude Include="src\sdk\offsets.h" />
+    <ClInclude Include="src\sdk\sdk.h" />
+    <ClInclude Include="src\sdk\structs.h" />
+    <ClInclude Include="src\sdk\w2s.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{8F3A6C21-47D9-4E0B-9A2C-5D1E8F7A0B33}</ProjectGuid>
+    <RootNamespace>External</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)output</OutDir>
+    <IntDir>$(SolutionDir)output\inter</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)\ext\imgui;$(ProjectDir)\src;$(ProjectDir)\src\render;$(ProjectDir)\ext\freetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)\ext\freetype\win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;d3dcompiler.lib;freetype64.lib;windowsapp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)\ext\imgui;$(ProjectDir)\src;$(ProjectDir)\src\render;$(ProjectDir)\ext\freetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)\ext\freetype\win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;d3dcompiler.lib;freetype64.lib;windowsapp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)\ext\imgui;$(ProjectDir)\src;$(ProjectDir)\src\render;$(ProjectDir)\ext\freetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)\ext\freetype\win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;d3dcompiler.lib;freetype64.lib;windowsapp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)\ext\imgui;$(ProjectDir)\src;$(ProjectDir)\src\render;$(ProjectDir)\ext\freetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)\ext\freetype\win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;d3dcompiler.lib;freetype64.lib;windowsapp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,31 @@
+# Visual Studio user settings / caches
+.vs/
+*.suo
+*.user
+*.VC.db
+*.VC.opendb
+*.ipch
+*.sdf
+*.opensdf
+
+# Build outputs (keep the offsets regenerator script)
+output/*
+!output/merge_offsets.ps1
+
+x64/
+Debug/
+Release/
+
+# Compiler / linker intermediates
+*.tlog
+*.obj
+*.o
+*.pdb
+*.ilk
+*.idb
+*.exp
+*.lastbuildstate
+BuildLog.htm
+
+# Logs
+*.log
